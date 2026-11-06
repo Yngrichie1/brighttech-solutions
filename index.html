@@ -212,19 +212,19 @@ footer {
 <section id="contact">
     <h2>Get In Touch</h2>
 
-    <form id="contactForm">
+    <form action="https://formsubmit.co/toxickybba@gmail.com" method="POST">
 
-        <input type="text" id="customerName"
+        <input type="text" name="name" id="customerName"
         placeholder="Your Name" required>
 
         <br><br>
 
-        <input type="email" id="customerEmail"
+        <input type="email" name="email" id="customerEmail"
         placeholder="Your Email" required>
 
         <br><br>
 
-        <textarea id="customerMessage"
+        <textarea name="message" id="customerMessage"
         placeholder="Write your message" required></textarea>
 
         <br><br>
@@ -234,30 +234,24 @@ footer {
     </form>
 </section>
 
+
 <footer>
     <p>Copyright 2026 BrightTech Solutions</p>
 </footer>
 
-<script>
-   function toggleMenu() {
-    const navigation = document.getElementById("navigation");
 
+<script>
+function toggleMenu() {
+    const navigation = document.getElementById("navigation");
     navigation.classList.toggle("show");
-} 
+}
+
 function welcome() {
     alert("Welcome to BrightTech Solutions!");
 }
-
-const form = document.getElementById("contactForm");
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    alert("Thank you for choosing our company!");
-
-    form.reset();
-});
 </script>
+
 
 </body>
 </html>
+
